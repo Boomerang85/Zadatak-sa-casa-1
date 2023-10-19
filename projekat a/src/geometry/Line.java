@@ -44,4 +44,22 @@ public class Line
 	public void setSelected(boolean selected) {
 		this.selected = selected;
 	}
+	
+	public boolean equals(Object obj) 
+	{
+
+		if(obj instanceof Line) 
+		{
+			Line l = (Line)obj;
+
+			if(l.startPoint == this.startPoint && l.endPoint == this.endPoint)
+
+				return true;
+
+			else
+				return false;
+		}
+		else 
+			return false;
+	}
 }

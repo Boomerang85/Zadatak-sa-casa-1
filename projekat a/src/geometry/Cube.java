@@ -51,5 +51,21 @@ public class Cube
 		this.a = a;
 	}
 	
-	
+	public boolean equals(Object obj) 
+	{
+
+		if(obj instanceof Rectangle) 
+		{
+			Cube c = (Cube)obj;
+
+			if(c.base == this.base && c.height == this.height)
+
+				return true;
+
+			else
+				return false;
+		}
+		else 
+			return false;
+	}
 }

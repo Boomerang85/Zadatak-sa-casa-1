@@ -61,5 +61,21 @@ public class Rectangle
 		this.isSelected = isSelected;
 	}
 
-	
+	public boolean equals(Object obj) 
+	{
+
+		if(obj instanceof Rectangle) 
+		{
+			Rectangle r = (Rectangle)obj;
+
+			if(r.upperLeftPoint == this.upperLeftPoint && r.height == this.height && r.width == this.width)
+
+				return true;
+
+			else
+				return false;
+		}
+		else 
+			return false;
+	}
 }

@@ -61,6 +61,21 @@ public class Circle
 		this.pi = pi;
 	}
 	
-	
-	
+	public boolean equals(Object obj) 
+	{
+
+		if(obj instanceof Rectangle) 
+		{
+			Circle c = (Circle)obj;
+
+			if(c.center == this.center && c.radius == this.radius && c.pi == this.pi)
+
+				return true;
+
+			else
+				return false;
+		}
+		else 
+			return false;
+	}
 }

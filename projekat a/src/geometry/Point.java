@@ -56,4 +56,22 @@ public class Point
 	{
 		this.selected = selected;
 	}
+	
+	public boolean equals(Object obj) 
+	{
+
+		if(obj instanceof Point) 
+		{
+			Point p = (Point)obj;
+
+			if(p.x == this.x && p.y == this.y)
+
+				return true;
+
+			else
+				return false;
+		}
+		else 
+			return false;
+	}
 }
