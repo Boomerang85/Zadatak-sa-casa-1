@@ -1,6 +1,8 @@
 package geometry;
 
-public class Circle 
+import java.awt.Graphics;
+
+public class Circle extends Shape
 {
 	private Point center;
 	private double radius;
@@ -77,5 +79,17 @@ public class Circle
 		}
 		else 
 			return false;
+	}
+
+	@Override
+	public boolean contains(int x, int y) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void draw(Graphics g) {
+		// TODO Auto-generated method stub
+		
 	}
 }

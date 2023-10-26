@@ -1,6 +1,8 @@
 package geometry;
 
-public class Cube 
+import java.awt.Graphics;
+
+public class Cube extends Shape
 {
 	private Rectangle base;
 	private double height;
@@ -67,5 +69,15 @@ public class Cube
 		}
 		else 
 			return false;
+	}
+	@Override
+	public boolean contains(int x, int y) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public void draw(Graphics g) {
+		// TODO Auto-generated method stub
+		
 	}
 }
